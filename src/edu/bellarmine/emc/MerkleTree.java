@@ -1,5 +1,7 @@
 package edu.bellarmine.emc;
 
+import TreePackage.BinaryTree;
+
 /**
  * This class implements the recursive version of binomial coefficient calculation.
  * 
@@ -10,5 +12,26 @@ package edu.bellarmine.emc;
  */
 
 public class MerkleTree {
+	
+	private BinaryTree<DataHash> tree;
+	
+	private class DataHash {
+		
+		private int hashKey;
+		
+		public DataHash() {
+			
+		}
+		
+		public DataHash(DataBlock data) {
+			hashKey = hash(data);
+		}
+		
+		private int hash(DataBlock input) {
+			
+			return 0;
+		}
+		
+	}
 	
 }// end "MerkleTree" class
