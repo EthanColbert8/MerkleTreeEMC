@@ -1,5 +1,7 @@
 package edu.bellarmine.emc;
 
+import java.util.ArrayList;
+
 /**
  * This class implements the recursive version of binomial coefficient calculation.
  * 
@@ -17,7 +19,13 @@ public class Application {
 	 */
 	public static void main(String[] args) {
 		
+		DataReader reader = new DataReader("TestFile.txt");
 		
+		ArrayList<DataBlock> dataList = reader.readData();
+		
+		for (DataBlock n : dataList) {
+			System.out.println(n.toString());
+		}
 		
 	}// end main
 	

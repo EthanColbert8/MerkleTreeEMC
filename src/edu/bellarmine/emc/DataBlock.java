@@ -23,12 +23,17 @@ public class DataBlock {
 		data = "";
 	}// end empty-argument constructor
 	
+	/**
+	 * Full-argument constructor - stores the data passed in.
+	 * @param newData - the data to store
+	 * @param nextPosition - the position of this block relative to other blocks
+	 */
 	public DataBlock(String newData, int nextPosition) {
 		
 		this.setData(newData);
 		this.setPosition(nextPosition);
 		
-	}
+	}// end full-argument constructor
 	
 	/**
 	 * @return the data
@@ -56,10 +61,15 @@ public class DataBlock {
 	 */
 	public void setPosition(int position) {
 		
-		if (position >= 0) {
+		if (position > 0) {
 			this.position = position;
 		}
 		
+	}
+
+	@Override
+	public String toString() {
+		return "DataBlock [data = \"" + data + "\", position = " + position + "]";
 	}
 	
 }// end "DataBlock" class
