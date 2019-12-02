@@ -12,8 +12,8 @@ package edu.bellarmine.emc;
 
 public class DataBlock {
 	
-	private String data;
-	private int position;
+	private String data;//the data contained in the block
+	private int position;//position relative to other blocks
 	
 	/**
 	 * Empty-argument constructor
@@ -36,8 +36,8 @@ public class DataBlock {
 	}// end full-argument constructor
 	
 	/**
-	 * For the intermediate nodes in the Merkle tree.
-	 * @param newData
+	 * This is a DataBlock for which position doesn't matter - it just gets set to -1.
+	 * @param newData - the data to store
 	 */
 	public DataBlock(String newData) {
 		this.setData(newData);

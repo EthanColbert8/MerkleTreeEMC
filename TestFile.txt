@@ -6,3 +6,27 @@
 6,Mark Hamill,Luke Skywalker, Star Wars
 7,James Earl Jones,Mufasa,The Lion King
 8,Robin Williams,John Keating,Dead Poet Society
+9,John Boyega,Finn,Star Wars
+10,Paul Rudd,Scott Lang,Ant Man
+11,Travis Fimmel,Ragnar Lothbrok,Vikings
+12,Clive Owen,Arthur,King Arthur
+13,Robert Downey Jr.,Tony Stark,Avengers
+14,Orlando Bloom,Will Turner, Pirates of the Caribbean
+15,Chloe Bennett,Daisy Johnson,Agents of Shield
+16,Johnny Depp,Jack Sparrow,Pirates of the Caribbean
+17,Patrick Stewart,Captain Picard,Star Trek Next Generation
+18,Jonathan Frakes,Will Riker,Star Trek Next Generation
+19,Scott Bakula,Captain Jonathan Archer,Star Trek Enterprise
+20,Connor Trineer,Trip Tucker,Star Trek Enterprise
+21,Jolene Blalock,T'Pol,Star Trek Enterprise
+22,Linda Park,Hoshi Sato,Star Trek Enterprise
+23,Dominic Keating,Malcolm Reed,Star Trek Enterprise
+24,Anthony Montgomery,Travis Mayweather,Star Trek Enterprise
+25,John Billingsley,Dr. Phlox,Star Trek Enterprise
+26,Jeffrey Combs,Commander Shran,Star Trek Enterprise
+27,Benedict Cumberbatch,Khan,Star Trek Into Darkness
+28,Eddie Redmayne,Stephen Hawking,Theory of Everything
+29,Tom Holland,Peter Parker,Spider Man Homecoming
+30,Zendaya,MJ,Spider Man Homecoming
+31,Hugh Jackman,P.T. Barnum,The Greatest Showman
+32,Zac Efron,Phillip Carlyle,The Greatest Showman

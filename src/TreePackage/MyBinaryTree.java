@@ -1,28 +1,37 @@
-/**
- * 
- */
 package TreePackage;
 
 import java.util.Iterator;
 
 /**
+ * This class represents a binary tree, using an array implementation.
+ * 
  * @author Ethan Colbert
- *
+ * @version 1.0
+ * Programming Project 3
+ * Fall 2019
  */
+
 public class MyBinaryTree<T> implements BinaryTreeInterface<T> {
 	
 	private T[] theData;
     private int height; // Of tree
     private int size;   // Number of locations in array for a full tree of this height
 	
+    /**
+     * Empty-argument constructor - creates an empty tree.
+     */
     public MyBinaryTree() {
     	
         height = 0;
         size = 0;
         theData = null;
     	
-    }
+    }// end empty-argument constructor
     
+    /**
+     * Constructor - creates a full MyBinaryTree with a height of initialHeight
+     * @param initialHeight - the height of the tree
+     */
     public MyBinaryTree(int initialHeight) {
     	
     	this.setHeight(initialHeight);
@@ -33,12 +42,22 @@ public class MyBinaryTree<T> implements BinaryTreeInterface<T> {
         T[] temp = (T[])new Object[size + 1]; // Unchecked cast
         theData = temp;
     	
-    }
+    }// end constructor
     
+    /**
+     * Returns the data from the node at the index passed in.
+     * @param label - the index to get data from
+     * @return the data from the node referenced
+     */
     public T getData(int label) {
     	return theData[label];
     }
     
+    /**
+     * Lets you set the data at index label
+     * @param label - where to set the data at
+     * @param newData - the data to set
+     */
     public void setData(int label, T newData) {
     	theData[label] = newData;
     }

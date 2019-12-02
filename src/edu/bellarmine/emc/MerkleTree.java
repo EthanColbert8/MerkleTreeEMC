@@ -4,7 +4,7 @@ import java.security.MessageDigest;
 import TreePackage.MyBinaryTree;
 
 /**
- * This class implements the recursive version of binomial coefficient calculation.
+ * This class represents a Merkle tree, using a MyBinaryTree to store it.
  * 
  * @author Ethan Colbert
  * @version 1.0
@@ -17,12 +17,20 @@ public class MerkleTree {
 	private MyBinaryTree<DataHash> tree;
 	private int height;
 	
+	/**
+	 * Empty-argument constructor - creates an empty Merkle tree
+	 */
 	public MerkleTree() {
 		tree = new MyBinaryTree<DataHash>();
 		height = 0;
 		//size = 0;
-	}
+	}// end empty-argument constructor
 	
+	/**
+	 * Creates a Merkle tree with the specified array of DataBlocks,
+	 * computing the hashes upon instantiation.
+	 * @param input - the array of DataBlocks to build the tree from
+	 */
 	public MerkleTree(DataBlock[] input) {
 		
 		height = (int)Math.ceil(Math.log(input.length + 1) / Math.log(2));
@@ -36,8 +44,13 @@ public class MerkleTree {
 		
 		computeHashes(input);
 		
-	}
+	}// end constructor
 	
+	/**
+	 * SUPPORT METHOD - computes the hashes to fill the tree.
+	 * Uses message digest with the algorithm SHA-256
+	 * @param input - the data to work from
+	 */
 	private void computeHashes(DataBlock[] input) {
 		
 		for (int i = height; i >= 1; i--) {
@@ -57,20 +70,35 @@ public class MerkleTree {
 			
 		}
 		
-	}
+	}// end "computeHashes" support method
 	
+	/**
+	 * @return the height of the tree
+	 */
 	public int getHeight() {
 		return height;
 	}
 	
+	/**
+	 * @return the number of nodes in the tree
+	 */
 	public int getNumberOfNodes() {
 		return (int)Math.pow(2, height) - 1;
 	}
 	
+	/**
+	 * @param index - the index to get data from
+	 * @return the data from the node at index
+	 */
 	public int getData(int index) {
 		return tree.getData(index).getHashKey();
 	}
 	
+	/**
+	 * This class represents a node of the Merkle tree.
+	 * @author Ethan Colbert
+	 *
+	 */
 	private class DataHash {
 		
 		private int hashKey;

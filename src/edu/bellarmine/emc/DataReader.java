@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * This class implements the recursive version of binomial coefficient calculation.
+ * This class reads the data from the file and breaks it up into DataBlocks.
  * 
  * @author Ethan Colbert
  * @version 1.0
@@ -15,8 +15,8 @@ import java.util.Scanner;
 
 public class DataReader {
 	
-	private Scanner fileRead;
-	private File file;
+	private Scanner fileRead;//a Scanner that reads the file
+	private File file;//a File object for the file itself
 	
 	/**
 	 * Empty-argument constructor
@@ -27,7 +27,7 @@ public class DataReader {
 	
 	/**
 	 * Full-argument constructor - creates a DataReader for the file passed in.
-	 * @param fileName
+	 * @param fileName -the name of the file to read from
 	 */
 	public DataReader(String fileName) {
 		file = new File(fileName);
@@ -65,14 +65,10 @@ public class DataReader {
 	public File getFile() {
 		return file;
 	}
-
-	/**
-	 * @param file the file to set
-	 */
-	public void setFile(File file) {
-		this.file = file;
-	}
 	
+	/**
+	 * @param fileName - the name of the new file
+	 */
 	public void setFile(String fileName) {
 		file = new File(fileName);
 	}
