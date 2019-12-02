@@ -53,7 +53,7 @@ public class DataReader {
 			fileRead.close();
 		}
 		catch(Exception e) {
-			System.out.println("Couldn't read from file. File may be corrupt.");
+			//System.out.println("Couldn't read from file. File may be corrupt.");
 		}
 		
 		return currentList;

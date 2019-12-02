@@ -1,11 +1,8 @@
-I WANT WAFFLES
-Kristina is my lover
-I don't wanna do schoolwork
-blah blah blah
-Physics is cool ... 
-but not with Mousa
-asdfasfdasdfjkl;
-aer vhoisudhsvgon
-Hitler was bad.
-What even is computer science?
-Life.
+1,Chris Pratt,Peter Quill,Guardians of the Galaxy
+2,Zoe Saldana,Nyota Uhura, Star Trek
+3,Chris Pine,Captain James Kirk,Star Trek
+4,Zachary Quinto,Spock,Star Trek
+5,Leonard Nimoy,Spock,Star Trek
+6,Mark Hamill,Luke Skywalker, Star Wars
+7,James Earl Jones,Mufasa,The Lion King
+8,Robin Williams,John Keating,Dead Poet Society

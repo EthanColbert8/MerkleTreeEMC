@@ -36,6 +36,15 @@ public class DataBlock {
 	}// end full-argument constructor
 	
 	/**
+	 * For the intermediate nodes in the Merkle tree.
+	 * @param newData
+	 */
+	public DataBlock(String newData) {
+		this.setData(newData);
+		position = -1;
+	}// end constructor
+	
+	/**
 	 * @return the data
 	 */
 	public String getData() {

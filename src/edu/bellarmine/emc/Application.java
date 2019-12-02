@@ -23,9 +23,19 @@ public class Application {
 		
 		ArrayList<DataBlock> dataList = reader.readData();
 		
-		for (DataBlock n : dataList) {
-			System.out.println(n.toString());
+		DataBlock[] temp = new DataBlock[dataList.size()];
+		
+		for (int i = 0; i < dataList.size(); i++) {
+			temp[i] = dataList.get(i);
 		}
+		
+		MerkleTree tree = new MerkleTree(temp);
+		
+		
+		for (int i = 1; i <= tree.getNumberOfNodes(); i++) {
+			System.out.println(tree.getData(i));
+		}
+		
 		
 	}// end main
 	
